@@ -9,10 +9,10 @@ extern "C" {
 #include "cJSON.h"
 
 
-#define DEVICE_STATUS_URL(deviceId) "https://api.smartthings.com/v1/devices/"deviceId"/components"
-#define DEVICE_MAIN_COMPONENT_STATUS_URL(deviceId) "https://api.smartthings.com/v1/devices/"deviceId"/components/main/status"
-#define DEVICE_PREFERENCES_URL(deviceId) "https://api.smartthings.com/v1/devices/"deviceId"/preferences"
-#define VIRTUALDEVICE_EVENT_URL(deviceId) "https://api.smartthings.com/v1/virtualdevices/"deviceId"/events"
+#define DEVICE_STATUS_URL(deviceId) "https://api.smartthings.com/devices/"deviceId"/components"
+#define DEVICE_MAIN_COMPONENT_STATUS_URL(deviceId) "https://api.smartthings.com/devices/"deviceId"/components/main/status"
+#define DEVICE_PREFERENCES_URL(deviceId) "https://api.smartthings.com/devices/"deviceId"/preferences"
+#define VIRTUALDEVICE_EVENT_URL(deviceId) "https://api.smartthings.com/virtualdevices/"deviceId"/events"
 
 #define get(token, url, result) request(token, HTTP_METHOD_GET, url, NULL, result)
 #define post(token, url, body, result) request(token, HTTP_METHOD_POST, url, body, result)
