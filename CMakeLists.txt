@@ -1,0 +1,13 @@
+idf_component_register(
+    SRCS
+        "smartthings/rest.c"
+    INCLUDE_DIRS
+        "."
+    PRIV_REQUIRES
+        esp_netif
+        esp_wifi
+        mbedtls
+        json
+    REQUIRES
+        esp_http_client
+)

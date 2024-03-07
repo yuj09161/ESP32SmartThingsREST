@@ -1,0 +1,5 @@
+dependencies:
+  idf: '^5.1'
+url: 'https://github.com/yuj09161/ESP32SmartThingsREST'
+version: 0.0.1
+license: 'MIT'
